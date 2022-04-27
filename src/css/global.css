@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  --bg: #e5e5e5;
+  --border: #121214;
+  --font: #121214;
+
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+
+  /* font-family: 'Courgette', cursive; */
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  margin: 3rem 0 4rem 0;
+  font-family: 'Courgette', cursive;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
