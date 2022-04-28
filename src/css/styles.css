@@ -38,6 +38,10 @@
   min-height: 2rem;
   border-radius: 2rem;
   border: 1px solid var(--border);
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.result-input {
+  display: none;
 }
 
