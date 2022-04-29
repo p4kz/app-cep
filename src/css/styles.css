@@ -14,6 +14,28 @@
   width: 100%;
 }
 
+.box-warning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cep-invalid {
+  margin: 0 auto 0 auto;
+  display: none;
+  font-size: 2rem;
+}
+
+.cep-length {
+  display: none;
+  margin: 0 auto 0 auto;
+}
+
+.cep-existent {
+  display: none;
+  margin: 0 auto 0 auto;
+}
+
 .text-user {
   padding: 1rem;
   font-size: 2rem;
@@ -22,7 +44,7 @@
   height: 5rem;
   border: 0;
   background: #2236;
-  border-radius: 2rem 2rem 0 0   ;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .btn-search {
