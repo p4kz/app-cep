@@ -5,9 +5,15 @@
 }
 
 html, body {
-  --bg: #e5e5e5;
-  --border: #121214;
-  --font: #121214;
+  --bg: #E9D5DA;
+
+  --primary: #82739738;
+  --secundary: #e6d7fc;
+
+  --bg-button: #827397;
+  --border: #363062;
+  --font: #191212;
+
 
   width: 100vw;
   height: 100vh;
@@ -15,6 +21,7 @@ html, body {
 
   /* font-family: 'Courgette', cursive; */
   font-family: 'Inter', sans-serif;
+  background: var(--bg);
 }
 
 h1 {
@@ -22,15 +29,28 @@ h1 {
   font-family: 'Courgette', cursive;
   font-size: 3.6rem;
   text-align: center;
+  color: var(--font);
 }
 
 button {
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
+  background: var(--bg-button);
+  color: var(--secundary);
+}
+
+button:hover {
+  filter: brightness(1.1)
 }
 
 input {
+  background: none;
   border: 0;
   width: 25rem;
+  color: var(--font);
+}
+
+p {
+  color: var(--font);
 }

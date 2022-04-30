@@ -21,8 +21,11 @@
   width: 100%;
   height: 5rem;
   border: 0;
-  background: #2236;
   border-radius: 2rem 2rem 0 0;
+  border: 1px solid var(--bg-button);
+  border-bottom:0;
+  background: var(--secundary);
+  color: var(--font);
 }
 
 .box-warning {
@@ -70,6 +73,12 @@
   border-radius: 0 0 2rem 2rem;
 }
 
+.btn-search:active {
+  border: 1px solid var(--bg-button);
+  background: var(--primary);
+  color: var(--border);
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -88,6 +97,7 @@
   border-radius: 2rem;
   border: 1px solid var(--border);
   font-size: 1.2rem;
+  background: var(--secundary);
 }
 
 .result-input {
@@ -112,10 +122,11 @@
   min-height: 15rem;
   padding: 1rem;
   width: 100%;
+  background: var(--primary);
 }
 
 .box-result-form {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   min-height: 5rem;
 }
 
@@ -126,11 +137,20 @@
   border-radius: 2rem;
 }
 
+.btn-copy:hover {
+  transform: scale(1.05);
+}
+
+.btn-copy:active {
+  border: 1px solid var(--border);
+  background: var(--primary);
+  color: var(--border);
+}
+
 .msg-copy {
   opacity: 0;
-  transition: .5ms;
   margin-bottom: 0.5rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: green;
 }
 
