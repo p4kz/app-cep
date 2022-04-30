@@ -1,4 +1,4 @@
-#main, #container {
+#main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,33 +7,11 @@
 
 #box {
   width: 60%;
-  min-width: 250px;
+  min-width: 270px;
 }
 
 #search {
   width: 100%;
-}
-
-.box-warning {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.cep-invalid {
-  margin: 0 auto 0 auto;
-  display: none;
-  font-size: 2rem;
-}
-
-.cep-length {
-  display: none;
-  margin: 0 auto 0 auto;
-}
-
-.cep-existent {
-  display: none;
-  margin: 0 auto 0 auto;
 }
 
 .text-user {
@@ -47,6 +25,30 @@
   border-radius: 2rem 2rem 0 0;
 }
 
+.box-warning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cep-invalid {
+  display: none;
+  opacity: .5;
+  margin: 0 auto 1rem auto;
+  font-size: 3rem;
+  font-family: 'Courgette', cursive;
+}
+
+.cep-length {
+  display: none;
+  margin: 0 auto 0 auto;
+}
+
+.cep-existent {
+  display: none;
+  margin: 0 auto 0 auto;
+}
+
 .btn-search {
   width: 100%;
   height: 5rem;
@@ -55,13 +57,21 @@
 }
 
 #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 3rem;
 }
 
+
 .result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  min-width: 250px;
-  padding: 2rem;
+  min-width: 270px;
+  padding: 1rem;
   min-height: 2rem;
   border-radius: 2rem;
   border: 1px solid var(--border);
@@ -69,6 +79,46 @@
 }
 
 .result-input {
+  width: 40rem;
+  min-width: 25rem;
+  margin: 1%;
   display: none;
+  padding: 1rem;
+}
+
+.box-result {
+  display: none;
+  width: 40rem;
+  min-width: 25rem;
+}
+
+.result-form { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.box-result-form {
+  min-height: 5rem;
+}
+
+.btn-copy {
+  width: 20rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 2rem;
+}
+
+.msg-copy {
+  opacity: 0;
+  transition: .5ms;
+  margin-bottom: 0.5rem;
+  font-size: 1.0rem;
+  color: green;
 }
 
