@@ -1,12 +1,11 @@
 const textUser = document.querySelector('.text-user')
-const result = document.querySelector('.result-input')
 const cepInvalid = document.querySelector('.cep-invalid') 
 const cepLength = document.querySelector('.cep-length')
 const cepExistent = document.querySelector('.cep-existent')
 const formatted = document.querySelector('.formatted')
-const resultBox = document.querySelector('.box-result')
 const msgCopy = document.querySelector('.msg-copy')
-
+const isOk = document.querySelector('.box-sucess')
+const warning = document.querySelector('.box-warning')
 
 function getCep() {
   if (textUser.value != '') {
@@ -21,9 +20,8 @@ function getCep() {
     fetch(`https://viacep.com.br/ws/${cep}/json/`, options)
     .then(response => {response.json()
       .then((data) => {
-        if (data.erro === 'true') {
-          display(result, off)
-          display(resultBox, off)
+        if (data.erro === 'true') {          
+          display(isOk, off)
           display(cepInvalid, on)
           display(cepExistent, on)
         } else {
@@ -32,20 +30,18 @@ function getCep() {
         }
       })
       
-      display(resultBox, on)
-      display(result, on)
+      display(isOk, on)
     })
     .catch(() => {
       if (cep.length < 8 || cep.length > 8) {
         display(cepLength, on)
       }  
       
-      display(resultBox, off)
-      display(result, off)
+      display(isOk, off)
       display(cepInvalid, on)
     })
     
-    display(resultBox, off)
+    display(isOk, off)
     display(cepExistent, off)
     display(cepLength, off)
     display(cepInvalid, off)
