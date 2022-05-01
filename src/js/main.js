@@ -6,10 +6,13 @@ const formatted = document.querySelector('.formatted')
 const msgCopy = document.querySelector('.msg-copy')
 const isOk = document.querySelector('.box-sucess')
 const warning = document.querySelector('.box-warning')
+const img = document.querySelector('.result img')
 
 function getCep() {
   if (textUser.value != '') {
     let cep = textUser.value
+    
+    display(img, off)
     
     const options = {
       method: 'GET',
