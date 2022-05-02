@@ -13,8 +13,11 @@
   </head>
   <body>
     <main id="main">
-      <div id="box">      
-        <h1>app-cep</h1>
+      <div id="box"> 
+        <header>
+          <h1>app-cep</h1>
+          <button onClick='toggleMode()' id='darkmode-button' class="mode-button">Dark mode</button>
+        </header>     
         <div id="search">
           <input type="text" class="text-user">
           <button onclick="getCep()" class="btn-search">Buscar</button>
@@ -57,6 +60,7 @@
     <footer>
       <p>Com 💜</p><a href="https://github.com/p4kz" target="_blank">p4kz</a>
     </footer>
+    <script src="./src/js/dark.js"></script>
     <script src="./src/js/main.js"></script>
   </body>
 </html>
